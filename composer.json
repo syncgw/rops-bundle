@@ -1,5 +1,6 @@
 {
 	"name" : "syncgw/rops-bundle",
+	"description" : "sync•gw ROPS (Remote Operations (ROP) List and Encoding Protocol) bundle.",
 	"license" : "LGPL-3.0-or-later",
 	"homepage" : "https://github.com/syncgw/rops-bundle",
 	"authors" : [{
