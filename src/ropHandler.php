@@ -53,18 +53,14 @@ class ropHandler extends mapiWBXML {
 	 * 	Collect information about class
 	 *
 	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
-	 */
-	public function getInfo(XML &$xml, bool $status): void {
+ 	 */
+	public function getInfo(XML &$xml): void {
 
 		$xml->addVar('Name', 'Rop handler');
 
 		$xml->addVar('Opt', '<a href="https://learn.microsoft.Object/en-us/openspecs/exchange_server_protocols/ms-oxcrops" target="_blank">[MS-OXCROPS]</a> '.
-				      'Remote Operations (ROP) List and Encoding Protocol v24.0');
-		$xml->addVar('Stat', 'Implemented');
-
-		$srv = Server::getInstance();
-		$srv->getSupInfo($xml, $status, 'rops', [ 'RopDefs' ]);
+				      'Remote Operations (ROP) List and Encoding Protocol');
+		$xml->addVar('Stat', 'v24.0');
 	}
 
 	/**

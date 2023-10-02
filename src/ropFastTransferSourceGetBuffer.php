@@ -37,17 +37,6 @@ class ropFastTransferSourceGetBuffer {
 		return self::$_obj;
 	}
 
-    /**
-	 * 	Collect information about class
-	 *
-	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
-	 */
-	public function getInfo(XML &$xml, bool $status): void {
-
-		$xml->addVar('Opt', sprintf('&lt;%s&gt; response handler', 'RopFastTransferSourceGetBuffer'));
-	}
-
 	/**
 	 * 	Parse Rop request / response
 	 *

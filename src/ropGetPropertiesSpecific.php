@@ -60,18 +60,7 @@ class ropGetPropertiesSpecific extends mapiWBXML {
 		return self::$_obj;
 	}
 
-    /**
-	 * 	Collect information about class
-	 *
-	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
-	 */
-	public function getInfo(XML &$xml, bool $status): void {
-
-		$xml->addVar('Opt', sprintf('&lt;%s&gt; response handler', 'RopGetPropertiesSpecific'));
-	}
-
-	/**
+ 	/**
 	 * 	Parse Rop request / response
 	 *
 	 *	@param 	- XML request document or binary request body
@@ -151,7 +140,7 @@ class ropGetPropertiesSpecific extends mapiWBXML {
 						$resp->addVar('Flag', 'Implied', false, [ 'T' => 'I', 'S' => '1', 'D' => 'VALUE_TYP' ]);
 					if (!($val = $usr->getVar('EMailPrime')))
 						$val = '';
-					if (Config::getInstance()->getVar(Config::DBG_SCRIPT)) 
+					if (Config::getInstance()->getVar(Config::DBG_SCRIPT))
 						$val = 'dummy@xxx.com';
 					// typ: 'S'
 					$resp->addVar('Value', parent::_putData($resp, $val, $typ), false, [ 'T' => $typ ]);
@@ -162,8 +151,8 @@ class ropGetPropertiesSpecific extends mapiWBXML {
 					if ($err)
 						$resp->addVar('Flag', 'Implied', false, [ 'T' => 'I', 'S' => '1', 'D' => 'VALUE_TYP' ]);
 					$val = $usr->getVar('AccountName');
-					if (Config::getInstance()->getVar(Config::DBG_SCRIPT)) 
-						$val = '010000xxxx000000-Debug'; 
+					if (Config::getInstance()->getVar(Config::DBG_SCRIPT))
+						$val = '010000xxxx000000-Debug';
 					$g = '';
 					foreach (explode('-', mapiDefs::GUID['NPSI']) as $t) {
 						for ($i=strlen($t) - 2; $i >= 0; $i-=2)
