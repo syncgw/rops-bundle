@@ -22,9 +22,9 @@
 	],
 	"require" : {
 		"php" : ">=8.1",
-		"syncgw/core-bundle" : "^9.19",
-		"syncgw/mapi-bundle" : "^9.19",
-		"syncgw/ics-bundle" : "^9.19"
+		"syncgw/core-bundle" : "^9.20",
+		"syncgw/mapi-bundle" : "^9.20",
+		"syncgw/ics-bundle" : "^9.20"
 	},
 	"autoload" : {
 		"psr-4" : {
