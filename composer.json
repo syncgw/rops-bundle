@@ -1,18 +1,18 @@
 {
 	"name" : "syncgw/rops-bundle",
-	"description" : "sync•gw ROPS (Remote Operations (ROP) List and Encoding Protocol) bundle.",
+	"description" : "sync*gw ROPS (Remote Operations (ROP) List and Encoding Protocol) bundle.",
 	"license" : "LGPL-3.0-or-later",
-    "repositories" : [{
-            "type" : "composer",
-            "url" : "https://repo.packagist.org"
-    	}
-    ],
+	"repositories" : [{
+			"type" : "composer",
+			"url" : "https://repo.packagist.org"
+		}
+	],
 	"type" : "syncgw-bundle",
 	"homepage" : "https://github.com/syncgw/rops-bundle",
 	"authors" : [{
 			"name" : "Florian Däumling",
 			"homepage" : "https://github.com/toteph42",
-            "role" : "Developer"
+			"role" : "Developer"
 		}
 	],
 	"funding" : [{
